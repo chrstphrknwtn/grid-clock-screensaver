@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<style>
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: '-apple-system';
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+
+clock {
+  max-width: 92vh;
+  max-height: 92vh;
+}
+
+glyph {
+  float: left;
+  display: block;
+  width: 6.25%;
+  height: 6.25%;
+  font-size: 2.6vh;
+  font-weight: 300;
+  line-height: 5.5vh;
+  text-align: center;
+  color: #222;
+  transition: color 400ms ease-in-out;
+}
+
+.on glyph {
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<clock>
+
+  <word class="one prefix">
+    <glyph>o</glyph>
+    <glyph>n</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <word class="two prefix">
+    <glyph>t</glyph>
+    <glyph>w</glyph>
+    <glyph>o</glyph>
+  </word>
+
+  <word class="three prefix">
+    <glyph>t</glyph>
+    <glyph>h</glyph>
+    <glyph>r</glyph>
+    <glyph>e</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <word class="four prefix">
+    <glyph>f</glyph>
+    <glyph>o</glyph>
+    <glyph>u</glyph>
+    <glyph>r</glyph>
+  </word>
+
+  <glyph>s</glyph>
+  <glyph>a</glyph>
+  <glyph>t</glyph>
+
+  <word class="five prefix">
+    <glyph>f</glyph>
+    <glyph>i</glyph>
+    <glyph>v</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <word class="six prefix">
+    <glyph>s</glyph>
+    <glyph>i</glyph>
+    <glyph>x</glyph>
+  </word>
+
+  <word class="seven prefix">
+    <glyph>s</glyph>
+    <glyph>e</glyph>
+    <glyph>v</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <glyph>b</glyph>
+  <glyph>e</glyph>
+
+  <word class="eight prefix">
+    <glyph>e</glyph>
+    <glyph>i</glyph>
+    <glyph>g</glyph>
+    <glyph>h</glyph>
+    <glyph>t</glyph>
+  </word>
+
+  <word class="nine prefix">
+    <glyph>n</glyph>
+    <glyph>i</glyph>
+    <glyph>n</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <word class="ten prefix">
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <glyph>s</glyph>
+  <glyph>o</glyph>
+  <glyph>o</glyph>
+  <glyph>n</glyph>
+
+  <word class="eleven prefix">
+    <glyph>e</glyph>
+    <glyph>l</glyph>
+    <glyph>e</glyph>
+    <glyph>v</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <word class="twelve prefix">
+    <glyph>t</glyph>
+    <glyph>w</glyph>
+    <glyph>e</glyph>
+    <glyph>l</glyph>
+    <glyph>v</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <word class="half">
+    <glyph>h</glyph>
+    <glyph>a</glyph>
+    <glyph>l</glyph>
+    <glyph>f</glyph>
+  </word>
+
+  <word class="quarter">
+    <glyph>q</glyph>
+    <glyph>u</glyph>
+    <glyph>a</glyph>
+    <glyph>r</glyph>
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>r</glyph>
+  </word>
+
+  <word class="minutes">
+    <word class="minute">
+      <glyph>m</glyph>
+      <glyph>i</glyph>
+      <glyph>n</glyph>
+      <glyph>u</glyph>
+      <glyph>t</glyph>
+      <glyph>e</glyph>
+    </word>
+    <glyph>s</glyph>
+  </word>
+
+  <glyph>t</glyph>
+  <glyph>o</glyph>
+
+  <word class="twenty">
+    <glyph>t</glyph>
+    <glyph>w</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+    <glyph>t</glyph>
+    <glyph>y</glyph>
+  </word>
+
+  <words class="thirteen">
+    <glyph>t</glyph>
+    <glyph>h</glyph>
+    <glyph>i</glyph>
+    <glyph>r</glyph>
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </words>
+
+  <glyph>a</glyph>
+  <glyph>t</glyph>
+
+  <words class="fourteen">
+    <glyph>f</glyph>
+    <glyph>o</glyph>
+    <glyph>u</glyph>
+    <glyph>r</glyph>
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </words>
+
+  <words class="fifteen">
+    <glyph>f</glyph>
+    <glyph>i</glyph>
+    <glyph>f</glyph>
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </words>
+
+  <glyph>s</glyph>
+
+  <words class="past">
+    <glyph>p</glyph>
+    <glyph>a</glyph>
+    <glyph>s</glyph>
+    <glyph>t</glyph>
+  </words>
+
+  <word class="to">
+    <glyph>t</glyph>
+    <glyph>o</glyph>
+  </word>
+
+  <word class="sixteen">
+    <glyph>s</glyph>
+    <glyph>i</glyph>
+    <glyph>x</glyph>
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <glyph>c</glyph>
+  <glyph>k</glyph>
+  <glyph>n</glyph>
+
+  <word class="seventeen">
+    <glyph>s</glyph>
+    <glyph>e</glyph>
+    <glyph>v</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <word class="twenty-minutes">
+    <glyph>t</glyph>
+    <glyph>w</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+    <glyph>t</glyph>
+    <glyph>y</glyph>
+  </word>
+
+  <glyph>a</glyph>
+
+  <word class="eighteen">
+    <glyph>e</glyph>
+    <glyph>i</glyph>
+    <glyph>g</glyph>
+    <glyph>h</glyph>
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <word class="nineteen">
+    <glyph>n</glyph>
+    <glyph>i</glyph>
+    <glyph>n</glyph>
+    <glyph>e</glyph>
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <word class="thirty-minutes">
+    <glyph>t</glyph>
+    <glyph>h</glyph>
+    <glyph>i</glyph>
+    <glyph>r</glyph>
+    <glyph>t</glyph>
+    <glyph>y</glyph>
+  </word>
+
+  <word class="forty-minutes">
+    <glyph>f</glyph>
+    <glyph>o</glyph>
+    <glyph>r</glyph>
+    <glyph>t</glyph>
+    <glyph>y</glyph>
+  </word>
+
+  <word class="fifty-minutes">
+    <glyph>f</glyph>
+    <glyph>i</glyph>
+    <glyph>f</glyph>
+    <glyph>t</glyph>
+    <glyph>y</glyph>
+  </word>
+
+  <word class="oclock">
+    <glyph>o</glyph>
+    <glyph>c</glyph>
+    <glyph>l</glyph>
+    <glyph>o</glyph>
+    <glyph>c</glyph>
+    <glyph>k</glyph>
+  </word>
+
+  <word class="one suffix">
+    <glyph>o</glyph>
+    <glyph>n</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <word class="two suffix">
+    <glyph>t</glyph>
+    <glyph>w</glyph>
+    <glyph>o</glyph>
+  </word>
+
+  <glyph>m</glyph>
+  <glyph>o</glyph>
+  <glyph>o</glyph>
+  <glyph>n</glyph>
+
+  <word class="three suffix">
+    <glyph>t</glyph>
+    <glyph>h</glyph>
+    <glyph>r</glyph>
+    <glyph>e</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <word class="four suffix">
+    <glyph>f</glyph>
+    <glyph>o</glyph>
+    <glyph>u</glyph>
+    <glyph>r</glyph>
+  </word>
+
+  <word class="five suffix">
+    <glyph>f</glyph>
+    <glyph>i</glyph>
+    <glyph>v</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <word class="six suffix">
+    <glyph>s</glyph>
+    <glyph>i</glyph>
+    <glyph>x</glyph>
+  </word>
+
+  <word class="seven suffix">
+    <glyph>s</glyph>
+    <glyph>e</glyph>
+    <glyph>v</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <word class="eight suffix">
+    <glyph>e</glyph>
+    <glyph>i</glyph>
+    <glyph>g</glyph>
+    <glyph>h</glyph>
+    <glyph>t</glyph>
+  </word>
+
+  <word class="nine suffix">
+    <glyph>n</glyph>
+    <glyph>i</glyph>
+    <glyph>n</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <glyph>i</glyph>
+  <glyph>o</glyph>
+
+  <word class="ten suffix">
+    <glyph>t</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <word class="eleven suffix">
+    <glyph>e</glyph>
+    <glyph>l</glyph>
+    <glyph>e</glyph>
+    <glyph>v</glyph>
+    <glyph>e</glyph>
+    <glyph>n</glyph>
+  </word>
+
+  <word class="twelve suffix">
+    <glyph>t</glyph>
+    <glyph>w</glyph>
+    <glyph>e</glyph>
+    <glyph>l</glyph>
+    <glyph>v</glyph>
+    <glyph>e</glyph>
+  </word>
+
+  <glyph>s</glyph>
+
+</clock>
+
+
+<script>
+
+var allNodeList = document.querySelectorAll('*');
+var allElements = Array.prototype.slice.call(allNodeList, 0);
+
+var prefixElements = document.querySelectorAll('.prefix');
+var suffixElements = document.querySelectorAll('.suffix');
+
+function el(selector) {
+  return document.querySelector(selector);
+}
+
+function setClockElOn(selector) {
+  el(selector).classList.add('on');
+}
+
+function setPrefixElOn(number) {
+  prefixElements[number-1].classList.add('on');
+}
+
+function setSuffixElOn(number) {
+  if(number == 13) number = 1;
+  suffixElements[number-1].classList.add('on');
+}
+
+function setMinutes(minutes) {
+  minutes = minutes.toString().split('');
+
+  switch(parseInt(minutes[0], 10)) {
+    case 2:
+      setClockElOn('.twenty-minutes');
+      break;
+    case 3:
+      setClockElOn('.thirty-minutes');
+      break;
+    case 4:
+      setClockElOn('.forty-minutes');
+      break;
+    case 5:
+      setClockElOn('.fifty-minutes');
+      break;
+  }
+
+  if(minutes % 10 != 0) {
+    setSuffixElOn(parseInt(minutes[1], 10))
+  }
+}
+
+function clearClock() {
+  allElements.forEach(function(element) {
+    element.classList.remove('on');
+  });
+}
+
+/** Main / Update Clock
+----------------------------------------------------------------------------- */
+function updateClock() {
+  var date = new Date();
+  var hour = date.getHours();
+  var minutes = date.getMinutes();
+
+  // Convert 24 hour time to 12 hour
+  if (hour >= 13) hour = hour-12;
+  if (hour == 0) hour = 12;
+
+  // 'Turn off' all clock elements
+  clearClock();
+
+  // One minute past [hour]
+  if(minutes == 1) {
+    setClockElOn('.one');
+    setClockElOn('.minute');
+    setClockElOn('.past');
+    setSuffixElOn(hour);
+    return;
+  }
+
+  // [minutes] past [hour]
+  if(minutes <= 12 && minutes >= 2) {
+    setPrefixElOn(minutes);
+    setClockElOn('.minutes');
+    setClockElOn('.past');
+    setSuffixElOn(hour);
+    return;
+  }
+
+  switch(minutes) {
+    // [hour] o'clock
+    case 0:
+      setPrefixElOn(hour);
+      setClockElOn('.oclock');
+      return;
+    // [hour] [minutes]
+    case 13:
+      setPrefixElOn(hour);
+      setClockElOn('.thirteen');
+      return;
+    case 14:
+      setPrefixElOn(hour);
+      setClockElOn('.fourteen');
+      return;
+    case 16:
+      setPrefixElOn(hour);
+      setClockElOn('.sixteen');
+      return;
+    case 17:
+      setPrefixElOn(hour);
+      setClockElOn('.seventeen');
+      return;
+    case 18:
+      setPrefixElOn(hour);
+      setClockElOn('.eighteen');
+      return;
+    case 19:
+      setPrefixElOn(hour);
+      setClockElOn('.nineteen');
+      return;
+    // quarter past [hour]
+    case 15:
+      setClockElOn('.quarter');
+      setClockElOn('.past');
+      setSuffixElOn(hour);
+      return;
+    // twenty past [hour]
+    case 20:
+      setClockElOn('.twenty');
+      setClockElOn('.past');
+      setSuffixElOn(hour);
+      return;
+    // half past [hour]
+    case 30:
+      setClockElOn('.half');
+      setClockElOn('.past');
+      setSuffixElOn(hour);
+      return;
+    // half to [next hour]
+    case 40:
+      setClockElOn('.twenty');
+      setClockElOn('.to');
+      setSuffixElOn(hour+1);
+      return;
+    // quarter to [next hour]
+    case 45:
+      setClockElOn('.quarter');
+      setClockElOn('.to');
+      setSuffixElOn(hour+1);
+      return;
+    // ten to [next hour]
+    case 50:
+      setClockElOn('.ten');
+      setClockElOn('.to');
+      setSuffixElOn(hour+1);
+      return;
+    // five to [next hour]
+    case 55:
+      setClockElOn('.five');
+      setClockElOn('.to');
+      setSuffixElOn(hour+1);
+      return;
+  }
+
+  // [hour] [minutes]
+  setPrefixElOn(hour);
+  setMinutes(minutes);
+}
+
+/** Tick / init
+----------------------------------------------------------------------------- */
+setInterval(updateClock, 1000);
+updateClock();
+
+</script>
+</body>
+</html>
