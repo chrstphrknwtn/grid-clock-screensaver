@@ -101,6 +101,7 @@
 			dependencies = (
 			);
 			name = "Grid Clock";
+			productName = "Grid Clock";
 			productReference = 3A40066818B53112005F43A6 /* Grid Clock.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
