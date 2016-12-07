@@ -33,12 +33,17 @@ glyph {
   display: block;
   width: 6.25%;
   height: 6.25%;
-  font-size: 22pt;
+  font-size: 2.6vh;
   font-weight: 300;
   line-height: 5.5vh;
   text-align: center;
   color: #222;
   transition: color 400ms ease-in-out;
+}
+@media screen and (min-height: 1200px) and (max-width: 1200px) {
+  glyph {
+    font-size: 1.6vh;
+  }
 }
 
 .on glyph {
