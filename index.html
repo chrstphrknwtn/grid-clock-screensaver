@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset='UTF-8'>
+<script src="jquery.min.js"></script>
+<script src="particles-js.js"></script>
 <style>
 
 html, body {
@@ -50,9 +52,20 @@ glyph {
   color: white;
 }
 
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
 </style>
 </head>
 <body>
+
+<div id="particles-js"></div>
 
 <clock>
 
@@ -439,6 +452,10 @@ glyph {
 
 
 <script>
+
+particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+    console.log('callback - particles.js config loaded');
+});
 
 var allNodeList = document.querySelectorAll('*');
 var allElements = Array.prototype.slice.call(allNodeList, 0);
