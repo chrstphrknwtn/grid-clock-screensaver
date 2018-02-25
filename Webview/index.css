@@ -1,0 +1,45 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: '-apple-system';
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+
+clock {
+  width: 92vw;
+  height: 92vw;
+  max-width: 92vh;
+  max-height: 92vh;
+}
+
+glyph {
+  float: left;
+  display: block;
+  width: 6.25%;
+  height: 6.25%;
+  font-size: 2.6vh;
+  font-weight: 300;
+  line-height: 5.5vh;
+  text-align: center;
+  color: #222;
+  transition: color 400ms ease-in-out;
+}
+@media screen and (min-height: 1200px) and (max-width: 1200px) {
+  glyph {
+    font-size: 1.6vh;
+  }
+}
+
+.on glyph {
+  color: white;
+}

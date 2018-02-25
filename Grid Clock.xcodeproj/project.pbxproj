@@ -3,24 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3A40066E18B53113005F43A6 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A40066D18B53113005F43A6 /* ScreenSaver.framework */; };
 		3A40068318B53129005F43A6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A40068218B53129005F43A6 /* WebKit.framework */; };
-		3A40068518B53226005F43A6 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3A40068418B53226005F43A6 /* index.html */; };
 		77996CD91C94B825006B0FF7 /* GridClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 77996CD81C94B825006B0FF7 /* GridClock.m */; };
+		77AD4D2D2041D6A9001100EC /* Webview in Resources */ = {isa = PBXBuildFile; fileRef = 77AD4D2C2041D6A9001100EC /* Webview */; };
+		77AD4D2F2041DBC6001100EC /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77AD4D2E2041DBC6001100EC /* ConfigureSheet.xib */; };
+		77AD4D312041E44A001100EC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AD4D302041E44A001100EC /* AppKit.framework */; };
+		77AD4D332041F756001100EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AD4D322041F756001100EC /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A40066818B53112005F43A6 /* Grid Clock.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grid Clock.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A40066D18B53113005F43A6 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
 		3A40068218B53129005F43A6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		3A40068418B53226005F43A6 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = SOURCE_ROOT; };
 		3A95A94B18EA12D30036779C /* GridClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridClock.h; sourceTree = SOURCE_ROOT; };
 		77996CD61C94B804006B0FF7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		77996CD81C94B825006B0FF7 /* GridClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridClock.m; sourceTree = SOURCE_ROOT; };
+		77AD4D2C2041D6A9001100EC /* Webview */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Webview; sourceTree = "<group>"; };
+		77AD4D2E2041DBC6001100EC /* ConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
+		77AD4D302041E44A001100EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		77AD4D322041F756001100EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77AD4D332041F756001100EC /* Cocoa.framework in Frameworks */,
+				77AD4D312041E44A001100EC /* AppKit.framework in Frameworks */,
 				3A40068318B53129005F43A6 /* WebKit.framework in Frameworks */,
 				3A40066E18B53113005F43A6 /* ScreenSaver.framework in Frameworks */,
 			);
@@ -56,6 +64,8 @@
 		3A40066A18B53112005F43A6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77AD4D322041F756001100EC /* Cocoa.framework */,
+				77AD4D302041E44A001100EC /* AppKit.framework */,
 				3A40068218B53129005F43A6 /* WebKit.framework */,
 				3A40066D18B53113005F43A6 /* ScreenSaver.framework */,
 			);
@@ -65,10 +75,11 @@
 		3A40067318B53113005F43A6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				77AD4D2C2041D6A9001100EC /* Webview */,
 				3A95A94B18EA12D30036779C /* GridClock.h */,
 				77996CD81C94B825006B0FF7 /* GridClock.m */,
-				3A40068418B53226005F43A6 /* index.html */,
 				77996CD61C94B804006B0FF7 /* Info.plist */,
+				77AD4D2E2041DBC6001100EC /* ConfigureSheet.xib */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -111,16 +122,16 @@
 		3A40065E18B53112005F43A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = chrstphrknwtn;
 				TargetAttributes = {
 					3A40066718B53112005F43A6 = {
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
 			buildConfigurationList = 3A40066118B53112005F43A6 /* Build configuration list for PBXProject "Grid Clock" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -141,7 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A40068518B53226005F43A6 /* index.html in Resources */,
+				77AD4D2D2041D6A9001100EC /* Webview in Resources */,
+				77AD4D2F2041DBC6001100EC /* ConfigureSheet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,30 +188,40 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -219,24 +241,34 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -244,6 +276,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -251,13 +284,13 @@
 		3A40068018B53113005F43A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4699R6ELY7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chrstphrknwtn.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Grid Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chrstphrknwtn.grid-clock";
+				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -265,13 +298,13 @@
 		3A40068118B53113005F43A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 4699R6ELY7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chrstphrknwtn.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Grid Clock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chrstphrknwtn.grid-clock";
+				PRODUCT_NAME = $TARGET_NAME;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;

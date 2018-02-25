@@ -1,4 +1,8 @@
 #import <ScreenSaver/ScreenSaver.h>
 
-@interface WSView : ScreenSaverView
+@interface GridClock : ScreenSaverView
+{
+    IBOutlet id configSheet;
+    IBOutlet id screenDisplayOption;
+}
 @end

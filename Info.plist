@@ -11,20 +11,20 @@
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
+	<string>0.0.4</string>
 	<key>CFBundleName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.2</string>
+	<string>0.0.4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.0.2</string>
+	<string>0.0.4</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2016 Christopher Newton. All rights reserved.</string>
+	<string>Copyright © 2018 Christopher Newton. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>WSView</string>
+	<string>GridClock</string>
 </dict>
 </plist>
