@@ -126,7 +126,8 @@
 				ORGANIZATIONNAME = chrstphrknwtn;
 				TargetAttributes = {
 					3A40066718B53112005F43A6 = {
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 6P74A2969D;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -135,6 +136,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 3A40065D18B53112005F43A6;
@@ -284,13 +286,18 @@
 		3A40068018B53113005F43A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 0.0.6;
+				DEVELOPMENT_TEAM = 6P74A2969D;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 0.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrstphrknwtn.grid-clock";
 				PRODUCT_NAME = $TARGET_NAME;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -298,13 +305,18 @@
 		3A40068118B53113005F43A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 0.0.6;
+				DEVELOPMENT_TEAM = 6P74A2969D;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 0.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chrstphrknwtn.grid-clock";
 				PRODUCT_NAME = $TARGET_NAME;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
