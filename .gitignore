@@ -16,6 +16,7 @@ DerivedData
 .idea/
 *.hmap
 xcuserdata/*
+build/
 
 *.pbxuser
 *.mode1v3
